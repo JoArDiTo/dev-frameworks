@@ -1,0 +1,17 @@
+---
+const { slug, data } = Astro.props;
+---
+
+<a 
+	class="grid place-items-center w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 rounded-xl p-2 xl:p-4 border border-gray-200 transition hover:scale-110"
+	href=`/framework/${slug}`
+>
+	<img
+		transition:name={`img-${slug}`} 
+		class="w-12 sm:w-16 md:w-20"
+		src={`/svg/frameworks/${data.img_framework}`}
+		alt={data.name}
+	/>
+	
+	<p class="text-bold text-white">{data.name}</p>
+</a>

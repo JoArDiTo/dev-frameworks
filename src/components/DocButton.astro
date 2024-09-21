@@ -1,0 +1,37 @@
+---
+const { slug, url } = Astro.props;
+
+const getColor = () => {
+    if (slug === 'angular') return 'bg-red-600 hover:bg-red-700';
+    if (slug === 'astro') return 'bg-purple-600 hover:bg-purple-700';
+    if (slug === 'django') return 'bg-green-700 hover:bg-green-800';
+    if (slug === 'express') return 'bg-gray-800 hover:bg-gray-900';
+    if (slug === 'fast-api') return 'bg-teal-500 hover:bg-teal-600';
+    if (slug === 'flask') return 'bg-gray-600 hover:bg-gray-700';
+    if (slug === 'laravel') return 'bg-red-500 hover:bg-red-600';
+    if (slug === 'next-js') return 'bg-black hover:bg-gray-900';
+    if (slug === 'nuxt-js') return 'bg-green-500 hover:bg-green-600';
+    if (slug === 'react') return 'bg-blue-500 hover:bg-blue-600';
+    if (slug === 'spring-boot') return 'bg-green-600 hover:bg-green-700';
+    if (slug === 'vue') return 'bg-green-400 hover:bg-green-500';
+    return 'bg-gray-500';
+};
+
+const className = getColor();
+---
+
+<span class="flex gap-x-5 items-center text-white text-xl font-bold">
+    <a 
+        class="bg-gray-500 py-2 px-6 rounded m-2 hover:bg-gray-600"
+        href="/"
+    >
+        Volver
+    </a>
+    <a 
+        class={`${className} py-2 px-6 rounded m-2`}
+        href={url}
+        target="_blank"    
+    >
+        Leer docs
+    </a>
+</span>

@@ -1,0 +1,50 @@
+---
+import { render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import DocButton from "../../components/DocButton.astro";
+import { version } from "typescript";
+
+export async function getStaticPaths() {
+    const frameworks = await getCollection("frameworks");
+
+    return frameworks.map((framework) => ({
+        params: { id: framework.slug },
+        props: { framework }
+    }));
+}
+
+const { framework } = Astro.props;
+const { data, slug } = framework;
+const { name, img_framework, description, language, img_language, last_version, docs } = data;
+
+const { Content } = await render(framework)
+---
+
+<Layout title={name}>
+    <div class="grid place-items-center">
+       <aside class="flex flex-col items-center gap-4">
+            <h1 class="text-5xl font-bold text-white pb-4">{name}</h1>
+            <img
+            class="w-48 pb-3"
+            transition:name={`img-${slug}`} 
+            src={`/svg/frameworks/${img_framework}`}
+            alt={name}
+            />
+            <p class="text-white text-2xl">Versión <span class="font-semibold">{last_version}</span></p>
+        <span class="max-w-3xl text-white text-xl prose prose-invert text-justify">
+            <Content />
+        </span>
+        <span class="grid place-items-center">
+            <p class="text-white text-3xl my-5">Lenguaje utilizado</p>
+            <img
+                class="w-24" 
+                src={`/svg/languages/${img_language}`}
+                alt={language}
+            >
+            <p class="text-2xl text-white py-2">{language}</p>
+        </span>
+        <DocButton slug={slug} url={docs} />
+       </aside>
+    </div>
+</Layout>
