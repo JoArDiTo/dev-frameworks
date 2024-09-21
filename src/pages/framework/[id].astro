@@ -3,7 +3,6 @@ import { render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import DocButton from "../../components/DocButton.astro";
-import { version } from "typescript";
 
 export async function getStaticPaths() {
     const frameworks = await getCollection("frameworks");
@@ -19,6 +18,7 @@ const { data, slug } = framework;
 const { name, img_framework, description, language, img_language, last_version, docs } = data;
 
 const { Content } = await render(framework)
+export const prerender = true
 ---
 
 <Layout title={name}>
