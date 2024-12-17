@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 
 const { framework } = Astro.props;
 const { data, slug } = framework;
-const { name, img_framework, description, language, img_language, last_version, docs } = data;
+const { name, img_framework, language, img_language, last_version, docs } = data;
 
 const { Content } = await render(framework)
 export const prerender = true
@@ -32,7 +32,7 @@ export const prerender = true
             alt={name}
             />
             <p class="text-white text-2xl">Versión <span class="font-semibold">{last_version}</span></p>
-        <span class="max-w-3xl text-white text-xl prose prose-invert text-justify">
+        <span class="max-w-4xl text-white text-xl prose prose-invert text-justify">
             <Content />
         </span>
         <span class="grid place-items-center">

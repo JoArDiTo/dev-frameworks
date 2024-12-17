@@ -4,7 +4,7 @@ img_framework: reactSvg.svg
 description: Biblioteca de JavaScript para la construcción de interfaces de usuario
 language: Javascript
 img_language: jsSvg.svg
-last_version: 18.2.0
+last_version: 19.0v
 docs: https://reactjs.org/
 ---
 

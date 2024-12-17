@@ -4,7 +4,7 @@ img_framework: astroSvg.svg
 description: Framework moderno para la creación de sitios web estáticos
 language: Javascript
 img_language: jsSvg.svg
-last_version: 4.12
+last_version: 5.0v
 docs: https://astro.build/
 ---
 

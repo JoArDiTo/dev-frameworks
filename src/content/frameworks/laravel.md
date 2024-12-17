@@ -4,7 +4,7 @@ img_framework: laravelSvg.svg
 description: Framework PHP diseñado para el desarrollo de aplicaciones web elegantes y fáciles de mantener
 language: PHP
 img_language: phpSvg.svg
-last_version: 10.0
+last_version: 10.0v
 docs: https://laravel.com/
 ---
 

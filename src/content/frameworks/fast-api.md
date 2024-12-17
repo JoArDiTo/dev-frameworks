@@ -4,7 +4,7 @@ img_framework: fastApiSvg.svg
 description: Framework moderno y rápido para la construcción de APIs con Python
 language: Python
 img_language: pySvg.svg
-last_version: 0.95
+last_version: 0.95v
 docs: https://fastapi.tiangolo.com/
 ---
 

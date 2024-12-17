@@ -4,7 +4,7 @@ img_framework: expressSvg.svg
 description: Framework minimalista para aplicaciones web y API con Node.js
 language: Javascript
 img_language: jsSvg.svg
-last_version: 4.18
+last_version: 4.21.0v
 docs: https://expressjs.com/
 ---
 

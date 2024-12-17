@@ -4,7 +4,7 @@ img_framework: nextJsSvg.svg
 description: Framework para la creación de aplicaciones React con renderizado en servidor
 language: Javascript
 img_language: jsSvg.svg
-last_version: 13.0
+last_version: 14.2.9v
 docs: https://nextjs.org/
 ---
 

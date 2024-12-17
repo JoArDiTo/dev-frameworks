@@ -4,7 +4,7 @@ img_framework: angularSvg.svg
 description: Framework robusto para el desarrollo de aplicaciones web de una sola página
 language: TypeScript
 img_language: tsSvg.svg
-last_version: 15.0
+last_version: 19.0v
 docs: https://angular.io/
 ---
 

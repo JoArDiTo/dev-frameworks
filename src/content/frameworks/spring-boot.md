@@ -4,7 +4,7 @@ img_framework: springBootSvg.svg
 description: Framework que simplifica el desarrollo de aplicaciones basadas en Spring
 language: Java
 img_language: javaSvg.svg
-last_version: 3.0
+last_version: 3.1.3v
 docs: https://spring.io/projects/spring-boot
 ---
 

@@ -4,7 +4,7 @@ img_framework: vueSvg.svg
 description: Framework progresivo para la construcción de interfaces de usuario
 language: Javascript
 img_language: jsSvg.svg
-last_version: 3.3
+last_version: 3.5.13v
 docs: https://vuejs.org/
 ---
 

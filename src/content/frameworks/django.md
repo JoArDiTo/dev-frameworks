@@ -4,7 +4,7 @@ img_framework: djangoSvg.svg
 description: Framework web de alto nivel que promueve el desarrollo rápido y limpio
 language: Python
 img_language: pySvg.svg
-last_version: 4.2
+last_version: 4.2.6v
 docs: https://www.djangoproject.com/
 ---
 

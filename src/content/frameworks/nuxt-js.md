@@ -4,7 +4,7 @@ img_framework: nuxtJsSvg.svg
 description: Framework para aplicaciones universales y estáticas basado en Vue.js
 language: Javascript
 img_language: jsSvg.svg
-last_version: 3.0
+last_version: 3.0v
 docs: https://nuxtjs.org/
 ---
 

@@ -4,7 +4,7 @@ img_framework: flaskSvg.svg
 description: Microframework ligero para el desarrollo de aplicaciones web
 language: Python
 img_language: pySvg.svg
-last_version: 2.2
+last_version: 3.1.0v
 docs: https://flask.palletsprojects.com/
 ---
 
